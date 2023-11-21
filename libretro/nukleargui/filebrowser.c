@@ -161,7 +161,7 @@ file_browser_init(struct file_browser *browser)
     {
         /* load files and sub-directory list */
         const char *home = getenv("HOME");
-#if defined(PS2) || defined(_3DS) || defined(SWITCH) // TODO: Fix directory
+#if defined(PS2) || defined(_3DS) || defined(SWITCH) || defined(SF2000) // TODO: Fix directory
     	if (!home) home = "/";
 #elif defined(GEKKO)
     	if (!home) home = "/sd:";
